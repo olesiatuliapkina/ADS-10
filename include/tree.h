@@ -7,6 +7,7 @@
 
 struct Node {
     bool isRootPerem = false;
+    char valPerem;
     std::vector<Node *> pointersPerem;
 };
 
