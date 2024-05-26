@@ -24,7 +24,7 @@ class Tree {
             std::vector<char> remainingChars(vec);
             remainingChars.erase(std::find(remainingChars.begin(),
                                            remainingChars.end(), c));
-            insert(tmp, remainingChars)
+            insert(tmp, remainingChars);
         }
     }
 
