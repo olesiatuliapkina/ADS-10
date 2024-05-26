@@ -40,7 +40,7 @@ class Tree {
         root->isRootPerem = true;
         insert(root, vec);
         std::vector<char> current;
-        findPerms(root, current)
+        findPerms(root, current);
     }
 
     std::vector<std::vector<char> > getPermutations() const {
