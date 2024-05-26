@@ -28,7 +28,7 @@ class Tree {
         }
     }
 
-    void findPerms(Node *root, std::vector<char> vec) {    
+    void findPerms(Node *root, std::vector<char> vec) {
         if (!root->isRootPerem) vec.push_back(root->valPerem);
         if (root->pointersPerem.empty()) perms.push_back(vec);
         for (Node *child : root->pointersPerem) findPerms(child, vec);
