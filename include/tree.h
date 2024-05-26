@@ -19,7 +19,7 @@ class Tree {
     void insert(Node *root, const std::vector<char> &vec) {
         for (char c : vec) {
             Node *tmp = new Node;
-            tmp->valPerem = c
+            tmp->valPerem = c;
             root->pointersPerem.push_back(tmp);
             std::vector<char> remainingChars(vec);
             remainingChars.erase(std::find(remainingChars.begin(),
